@@ -1,38 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css"  href="public/index.css">
-    <title>Portofolio Yakup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="public/index.css">
+    <title>Portfolio Website</title>
 </head>
-<body>
-    <!-- Header Start -->
-    <header class="header">
-        <a href="#" class="logo">yakup.</a>
 
-        <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Education</a>
-            <a href="#">Certificate</a>
-            <a href="#">Recent Projects</a>
+<body>
+    <header>
+        <a href="#" class="logo">Yakup.</a>
+
+        <nav>
+            <a href="#home" class="active"> Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About</a>
+            <a href="#certificate">Certificate</a>
+            <a href="#education">Education</a>
         </nav>
     </header>
-    <!-- Header End, Home Start -->
-    <section class="home">
+
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="/public/img/Bro-copy.png" alt="">
+        </div>
         <div class="home-content">
-            <h3>Hello, I'm</h3>
-            <h1>Yakup Asmaidy Atanggae</h1>
-            <h2>Software Engineer</span></h2>
-            <p>Undergraduate student at the Faculty of Informatics, Telkom University. Interested in Software and Game Development.</p>
-            <div class="instagra"></div>
-            <div class="facebook"></div>
-            <div class="linkedin"></div>
-            <div class="twitter"></div>
-            <div class="contact"></div>
+            <h1>Hello, I'm <span>Yakup</span></h1>
+            <h3 class="typing-text">an I'm a <span></span></h3>
+            <p> Undergraduate student majoring in Software Engineering, Telkom University.</p>
+            <p>Interested in Software Development and Web Development</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/yakup-asmaidy-atanggae-404bb0255/" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                    <i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Yakup-TBR" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-github" aria-label="Github Profile"></i></a>
+                <a href="https://www.instagram.com/yakup_atanggae/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-instagram" aria-label="Instagram Profile"></i></a>
+            </div>
+            <a href="public/Yakup Asmaidy Atanggae_CV_EN.pdf" class="btn">Download CV</a>
         </div>
     </section>
+
+    <section class="projects" id="projects">
+        <div class="projects-content" id="projects-content">
+            <h1>PROJECTS</h1>
+            <h2>OVERVIEW</h2>
+            <h3>LIST OF SELECTED PORTOFOLIO</h3>
+            <div class="container" id="listPortofolio">
+                <div class="container" id="InkostelMobile">
+                    <div class="deskripsi">
+                        <h2>JUNE 2024 | Bandung, West Java</h2>
+                        <h1>Inkostel Mobile</h1>
+                        <h3>Full Stack Dev</h3>
+                        <h4>Inkostel Mobile is an Android Based Boarding House Search Application that help user to find
+                            boarding houses around Telkom University.</h4>
+                        <p>Utilizing the Flutter Framework using the Dart programming language, and using Firebase as
+                            the application database.</p>
+                        <a href="https://github.com/Yakup-TBR/Inkostel_Mobile" class="button" target="_blank" rel="noopener noreferrer">
+                            Case Study
+                        </a>
+
+                    </div>
+                    <div class="Image-Inkostel">
+                        <img src="/public/img/InkostelMobile.png" alt="Inkostel Mobile Image">
+                    </div>
+                </div>
+                <div class="container" id="WebSatu">
+
+                </div>
+                <div class="container" id="WebDua">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="skills-content">
+            <h1>About Me</h1>
+            <p> Allow me to introduce myself, I am Yakup Asmaidy Atanggae, born on September 3rd 2003 in Tabanan,
+                Indonesia.
+                Currently I'm pursuing my undergraduate degree
+                in Software Engineering at Telkom University. I have a deep interest in Software Development,
+                UI/UX, and Web Development. I seek to gain practical experience in the
+                professional world and contribute dynamically within a team.</p>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h1>About Me</h1>
+            <p> Allow me to introduce myself, I am Yakup Asmaidy Atanggae, born on September 3rd 2003 in Tabanan,
+                Indonesia.
+                Currently I'm pursuing my undergraduate degree
+                in Software Engineering at Telkom University. I have a deep interest in Software Development,
+                UI/UX, and Web Development. I seek to gain practical experience in the
+                professional world and contribute dynamically within a team.</p>
+        </div>
+    </section>
+
+
 </body>
+<script src="public/index.js"></script>
+
 </html>
