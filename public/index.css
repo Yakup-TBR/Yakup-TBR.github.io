@@ -12,10 +12,13 @@
 }
 
 @keyframes fadeOut {
-    from {opacity: 1;}
-    to {opacity: 0;}
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
-
 
 html {
     font-size: 62.5%;
@@ -71,8 +74,6 @@ nav a.active {
 }
 
 /* NAVBAR END - HOME START */
-
-
 
 section {
     min-height: 100vh;
@@ -250,14 +251,42 @@ span {
 }
 
 #InkostelMobile,
-#WebSatu,
+#InkostelWeb,
 #WebDua {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 90%; /* Atur lebar sesuai kebutuhan */
-    height: 500px; /* Atur tinggi sesuai kebutuhan */
-    margin: 0 auto; /* Pastikan elemen tetap berada di tengah */
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.CaseStudyButton {
+    display: flex;
+    align-items: center; /* Menyelaraskan teks secara vertikal */
+    justify-content: center; /* Menyelaraskan teks secara horizontal */
+    padding: 12px 24px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #dfd090;
+    opacity: 0.9;
+    transition:
+        background-color 0.3s,
+        border-color 0.3s,
+        opacity 0.3s;
+    width: 170px;
+    height: 35px;
+    line-height: 1;
+}
+
+.CaseStudyButton:hover {
+    background-color: #dfd090; /* Warna latar belakang saat hover */
+    border-color: #dfd090; /* Warna border saat hover */
+    opacity: 1; /* Mengatur opacity saat hover */
 }
 
 #InkostelMobile {
@@ -267,7 +296,7 @@ span {
     text-align: start;
 }
 
-.deskripsi {
+.deskripsi-InkostelMobile {
     flex: 1; /* Mengatur kolom deskripsi untuk menggunakan ruang yang tersedia */
     padding-left: 50px;
 }
@@ -312,34 +341,6 @@ span {
     margin-bottom: 50px;
 }
 
-.button {
-    display: flex;
-    align-items: center; /* Menyelaraskan teks secara vertikal */
-    justify-content: center; /* Menyelaraskan teks secara horizontal */
-    padding: 12px 24px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 17px;
-    font-weight: 300;
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff; /* Warna teks tombol */
-    border: 1px solid #DFD090;
-    opacity: 0.9;
-    transition:
-        background-color 0.3s,
-        border-color 0.3s,
-        opacity 0.3s;
-    width: 170px;
-    height: 35px;
-    line-height: 1;
-}
-
-.button:hover {
-    background-color: #DFD090; /* Warna latar belakang saat hover */
-    border-color: #DFD090; /* Warna border saat hover */
-    opacity: 1; /* Mengatur opacity saat hover */
-}
-
 .Image-Inkostel {
     align-items: center;
     padding-right: 80px;
@@ -355,14 +356,89 @@ span {
     width: 200px;
 }
 
-#WebSatu {
+/*  ------------ WebInkostel -----------*/
+
+#InkostelWeb {
     background-image: url("/public/img/bg_inkostel.jpg");
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    position: relative; /* Membuat kontainer sebagai referensi posisi */
+}
+
+.deskripsi-InkostelWeb {
+    position: absolute; /* Menempatkan deskripsi di atas gambar */
+    z-index: 1; /* Menjaga deskripsi berada di depan */
+    top: 50px; /* Atur posisi sesuai kebutuhan */
+    left: 50px; /* Atur posisi sesuai kebutuhan */
+    color: #ffffff; /* Warna teks tetap terlihat */
+}
+
+#InkostelWeb h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+#InkostelWeb h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 38px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+#InkostelWeb h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #959191;
+    margin-bottom: 20px;
+}
+
+#InkostelWeb h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    max-width: 370px;
+}
+
+#InkostelWeb p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    max-width: 390px;
+
+}
+
+.Image-InkostelWeb {
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-left: auto;
+}
+
+.Image-InkostelWeb img {
+    flex: 1;
+    opacity: 80%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 630px;
+    z-index: 0; /* Gambar berada di belakang */
+    position: relative; /* Agar tidak saling bertumpukan */
+    padding-top: 100px;
 }
 
 #WebSatu {
     background-image: url("/public/img/bg_inkostel.jpg");
 }
-
 
 @keyframes cursor {
     to {
